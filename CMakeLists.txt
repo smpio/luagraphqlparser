@@ -7,10 +7,8 @@ if(NOT CMAKE_BUILD_TYPE)
 endif()
 set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}" ${CMAKE_MODULE_PATH})
 
-# Find Tarantool and Lua dependencies
-set(Tarantool_FIND_REQUIRED ON)
-find_package(Tarantool)
-include_directories(${TARANTOOL_INCLUDE_DIRS})
+# Find Lua dependencies
+include_directories(${INCLUDE_DIRS})
 
 # Find other dependencies
 

@@ -9,4 +9,4 @@ target_link_libraries(luagraphqlparser graphqlparser)
 set_target_properties(luagraphqlparser PROPERTIES PREFIX "" OUTPUT_NAME "luagraphqlparser")
 
 # Install module
-install(TARGETS luagraphqlparser LIBRARY DESTINATION ${TARANTOOL_INSTALL_LIBDIR}/)
+install(TARGETS luagraphqlparser LIBRARY DESTINATION ${LIBDIR}/)
